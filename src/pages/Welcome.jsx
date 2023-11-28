@@ -1,8 +1,8 @@
-import microgrid from "../assets/img/microgrid.png";
-import architecture from "../assets/img/architecture.png";
-import market from "../assets/img/market01.png";
-import marketmeters from "../assets/img/market_meters.png";
-import dapparchitecture from "../assets/img/dapp_architecture.png";
+import microgrid from "../assets/microgrid.png";
+import architecture from "../assets/architecture.png";
+import market from "../assets/market01.png";
+import marketmeters from "../assets/market_meters.png";
+import dapparchitecture from "../assets/dapp_architecture.png";
 
 const Welcome = () => {
   return (
