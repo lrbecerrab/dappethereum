@@ -1,6 +1,6 @@
-FROM node:alpine
+FROM node:18.18-alpine
 
-WORKDIR /frontend
+WORKDIR /app
 
 COPY package.json .
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 5173
+EXPOSE 5775
 
 CMD [ "npm", "run", "dev" ]
