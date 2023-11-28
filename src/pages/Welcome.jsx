@@ -37,11 +37,13 @@ const Welcome = () => {
           grid.
           <br />
           <br />
-          <img
-            src={microgrid}
-            alt="microgrid"
-            className="w-4/12 cursor-pointer"
-          />
+        </p>
+        <img
+          src={microgrid}
+          alt="microgrid"
+          className="w-4/12 cursor-pointer"
+        />
+        <p>
           <br />
           In a microgrid the energy consumers, generators and prosumers are
           grouped together, and they constitute a local market in which energy
@@ -52,21 +54,25 @@ const Welcome = () => {
           and new forms of the energy market have been enabled.
           <br />
           <br />
-          <img src={market} alt="market" className="w-8/12 cursor-pointer" />
+        </p>
+        <img src={market} alt="market" className="w-8/12 cursor-pointer" />
+        <p>
           <br />
           <br />
           In order to get the data of the energy consumption and generation of
           the microgrid, the smart meters are used.
           <br />
           <br />
-          <img
-            src={marketmeters}
-            alt="market"
-            className="w-8/12 cursor-pointer"
-          />
-          <br />
-          <br />
         </p>
+        <img
+          src={marketmeters}
+          alt="market"
+          className="w-8/12 cursor-pointer"
+        />
+
+        <br />
+        <br />
+
         <h1 className="font-bold uppercase text-lg">
           Transactive energy systems
         </h1>
@@ -77,15 +83,16 @@ const Welcome = () => {
           be:
           <br />
           <br />
-          <ul className="text-black">
-            <li>Data security, (financial data is exchanged).</li>
-            <li>Data privacy (avoid user profiling).</li>
-            <li>Speed of execution of transactions (linear order).</li>
-            <li>Resilience to failures.</li>
-            <li>Information integrity.</li>
-            <li>Reduced energy footprint.</li>
-          </ul>
         </p>
+        <ul className="text-black">
+          <li>Data security, (financial data is exchanged).</li>
+          <li>Data privacy (avoid user profiling).</li>
+          <li>Speed of execution of transactions (linear order).</li>
+          <li>Resilience to failures.</li>
+          <li>Information integrity.</li>
+          <li>Reduced energy footprint.</li>
+        </ul>
+
         <h1 className="font-bold uppercase text-lg">
           Distributed ledger technologies
         </h1>
@@ -102,51 +109,59 @@ const Welcome = () => {
           The design of the prototype is based on the following architecture:
           <br />
           <br />
-          <img
-            src={architecture}
-            alt="architecture"
-            className="w-8/12 cursor-pointer"
-          />
         </p>
-        It is made up of 3 layers:
+        <img
+          src={architecture}
+          alt="architecture"
+          className="w-8/12 cursor-pointer"
+        />
+        <p>It is made up of 3 layers:</p>
         <br />
         <br />
         <h2 className="font-semibold">Field layer</h2>
         <br />
-        The objective of this layer is to guarantee the necessary infrastructure
-        for the distribution of energy within the microgrid. It includes smart
-        energy meters, control devices and breakers that allow the
-        activation/deactivation of energy exchange points.
-        <br />
-        <br />
+        <p>
+          The objective of this layer is to guarantee the necessary
+          infrastructure for the distribution of energy within the microgrid. It
+          includes smart energy meters, control devices and breakers that allow
+          the activation/deactivation of energy exchange points.
+          <br />
+          <br />
+        </p>
         <h2 className="font-semibold">DLT layer</h2>
         <br />
         <br />
-        This layer is responsible for the implementation of the TRD. It contains
-        the interconnected nodes in a P2P network that allow the exchange of
-        information.
-        <br />
-        <br />
+        <p>
+          This layer is responsible for the implementation of the TRD. It
+          contains the interconnected nodes in a P2P network that allow the
+          exchange of information.
+          <br />
+          <br />
+        </p>
         <h2 className="font-semibold">DAPP layer</h2>
         <br />
         <br />
-        This layer consists in a distributed application that has been
-        implemented according to the following figure:
-        <br />
-        <br />
+        <p>
+          This layer consists in a distributed application that has been
+          implemented according to the following figure:
+          <br />
+          <br />
+        </p>
         <img
           src={dapparchitecture}
           alt="Dapp architecture"
           className="w-8/12 cursor-pointer"
         />
       </div>
-      If you want to know more about the prototype, you can visit the following
-      link:
-      <br />
-      <br />
-      <a href="https://github.com/lrbecerrab/nrgytransact">
-        https://github.com/lrbecerrab/nrgytransact
-      </a>
+      <p>
+        If you want to know more about the prototype, you can visit the
+        following link:
+        <br />
+        <br />
+        <a href="https://github.com/lrbecerrab/nrgytransact">
+          https://github.com/lrbecerrab/nrgytransact
+        </a>
+      </p>
     </div>
   );
 };
