@@ -103,7 +103,20 @@ export const DltProvider = ({ children }) => {
       console.log(error);
     }
   };
+  const connectWallet = async () => {
+    try {
+      if (!ethereum)
+        return alert("Metamask no está instalada, por favor instálela");
 
+      const accounts = await ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      setCurrentAccount(accounts[0]);
+    } catch (error) {
+      console.log(error);
+      throw new Error("No ethereum object");
+    }
+  };
   const loadMarketData = async () => {
     try {
       if (ethereum) {
@@ -148,20 +161,7 @@ export const DltProvider = ({ children }) => {
     }
   };
 
-  const connectWallet = async () => {
-    try {
-      if (!ethereum)
-        return alert("Metamask no está instalada, por favor instálela");
 
-      const accounts = await ethereum.request({
-        method: "eth_requestAccounts",
-      });
-      setCurrentAccount(accounts[0]);
-    } catch (error) {
-      console.log(error);
-      throw new Error("No ethereum object");
-    }
-  };
 
   const getProsumerMeters = async () => {
     try {
