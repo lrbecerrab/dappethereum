@@ -23,6 +23,9 @@ const Navbar = () => {
         <Link className="text-white p-5" to="/Market">
           Market
         </Link>
+        <Link className="text-white p-5" to="/Market">
+          Setting
+        </Link>
         <Link className="text-white p-5" to="/Prosumer">
           Account
         </Link>
