@@ -17,14 +17,14 @@ const Navbar = () => {
         <Link className="text-white p-5" to="/">
           Welcome
         </Link>
+        <Link className="text-white p-5" to="/Setting">
+          Setting
+        </Link>
         <Link className="text-white p-5" to="/Financial">
           Financial
         </Link>
         <Link className="text-white p-5" to="/Market">
           Market
-        </Link>
-        <Link className="text-white p-5" to="/Market">
-          Setting
         </Link>
         <Link className="text-white p-5" to="/Prosumer">
           Account

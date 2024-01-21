@@ -161,8 +161,6 @@ export const DltProvider = ({ children }) => {
     }
   };
 
-
-
   const getProsumerMeters = async () => {
     try {
       if (ethereum) {
@@ -389,7 +387,23 @@ export const DltProvider = ({ children }) => {
       throw new Error("No ethereum object");
     }
   };
+  const meterDisable = async (meterAddress) => {
+    try {
+      if (ethereum) {
+        const transactionHash = await microgrid.disableMeter(meterAddress);
+        console.log(`Transacción deshabilitar medidor ${meterAddress}`);
+        console.log(`${transactionHash.hash}-Cargando transacción`);
+        await transactionHash.wait();
+        console.log(`${transactionHash.hash}-Transacción exitosa`);
+      } else {
+        console.log("No ethereum object");
+      }
+    } catch (error) {
+      console.log(error);
 
+      throw new Error("No ethereum object");
+    }
+  };
   const buyEnergy = async (meterAddress) => {
     try {
       if (ethereum) {
@@ -450,6 +464,7 @@ export const DltProvider = ({ children }) => {
         prosumerMeasures,
         marketMeasures,
         ismyMeter,
+        meterDisable,
         // Funciones del prosumidor
         newMeter,
         setRate,

@@ -158,8 +158,8 @@ const Welcome = () => {
         following link:
         <br />
         <br />
-        <a href="https://github.com/lrbecerrab/nrgytransact">
-          https://github.com/lrbecerrab/nrgytransact
+        <a href="https://github.com/lrbecerrab/dappethereum">
+          https://github.com/lrbecerrab/dappethereum
         </a>
       </p>
     </div>
